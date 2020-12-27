@@ -1,0 +1,1970 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,427.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ss="clr-namespace:System.ServiceProcess;assembly=System.ServiceProcess" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="43">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Activities.System.Compression.Zip</x:String>
+      <x:String>UiPath.Activities.System.Encode</x:String>
+      <x:String>UiPath.Activities.System.Compression.Workflow</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="304,145.6" sap2010:WorkflowViewState.IdRef="Sequence_116">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="650.4,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="snm:MailMessage" Name="curr_mail" />
+        <Variable x:TypeArguments="x:String" Name="mail" />
+        <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="Emails_att" />
+        <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Путь в папку для редактирования" Name="path" />
+        <Variable x:TypeArguments="x:String" Name="failMessageToClients" />
+        <Variable x:TypeArguments="x:String" Name="failMessageToDev" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 300.4,107.7 300.4,135.6</av:PointCollection>
+          <x:Double x:Key="Width">616.8</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID4</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">167.6,135.6</av:Point>
+            <av:Size x:Key="ShapeSize">265.6,52.8</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300.4,188.4 300.4,218.4 150.4,218.4 150.4,105.6 300.4,105.6 300.4,135.6</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch DisplayName="TryCatch - Main Try Catch" sap:VirtualizedContainerService.HintSize="433.6,679.2" sap2010:WorkflowViewState.IdRef="TryCatch_43">
+          <TryCatch.Variables>
+            <Variable x:TypeArguments="x:String" Name="variable1" />
+          </TryCatch.Variables>
+          <TryCatch.Try>
+            <Sequence DisplayName="Full main" sap:VirtualizedContainerService.HintSize="228,68.8" sap2010:WorkflowViewState.IdRef="Sequence_284">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="cellStartLoopRez" />
+                <Variable x:TypeArguments="x:Int32" Name="try_rez_no" />
+                <Variable x:TypeArguments="x:Boolean" Name="tryCheck">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:Boolean" />
+                  </Variable.Default>
+                </Variable>
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="848.8,60" sap2010:WorkflowViewState.IdRef="Assign_265">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[path]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">doc</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="848.8,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[path]" />
+              <Sequence sap2010:Annotation.AnnotationText="Забор сообщений" DisplayName="GetMail" sap:VirtualizedContainerService.HintSize="848.8,1247.2" sap2010:WorkflowViewState.IdRef="Sequence_240">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap2010:Annotation.AnnotationText="Почта из которой извлекаются файлы" DisplayName="Assign - Mail почта" sap:VirtualizedContainerService.HintSize="737.6,91.2" sap2010:WorkflowViewState.IdRef="Assign_216">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[mail]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">victorz95@mail.ru</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <Flowchart sap2010:Annotation.AnnotationText="Ждет появления сообщения на почте" DisplayName="Flowchart - Триггер по теме &quot;Остатки&quot;" sap:VirtualizedContainerService.HintSize="737.6,84" sap2010:WorkflowViewState.IdRef="Flowchart_6">
+                  <Flowchart.Variables>
+                    <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="Emails" />
+                  </Flowchart.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+                      <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 260,107.7 260,138.8</av:PointCollection>
+                      <x:Double x:Key="Width">644</x:Double>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Flowchart.StartNode>
+                    <x:Reference>__ReferenceID3</x:Reference>
+                  </Flowchart.StartNode>
+                  <FlowStep>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">8.80000000000001,23.6</av:Point>
+                        <av:Size x:Key="ShapeSize">265.6,52.8</av:Size>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch DisplayName="TryCatch - Flowchart Mail Try Catch" sap:VirtualizedContainerService.HintSize="265.6,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_44">
+                      <TryCatch.Try>
+                        <ui:GetOutlookMailMessages TimeoutMS="{x:Null}" Account="[mail]" DisplayName="Get Outlook Mail Messages" Filter="[subject]='Остатки'" GetAttachements="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_9" MailFolder="входящие" MarkAsRead="False" Messages="[Emails]" OnlyUnreadMessages="True" Top="5" />
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="ss:TimeoutException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_57">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="ss:TimeoutException">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ss:TimeoutException" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_287">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ReplyToOutlookMailMessage TimeoutMS="{x:Null}" Body="Произошла ошибка отправки результативного файла - result.xlsx. Возможно, среди отправленных файлов отсутствует конфигурационный файл - config.xlsx. Также проблема может заключатся в том, что значения в файле config.xlsx заданы неверно. Убедитесь, что конфигурационный файл имеет название - config.xlsx. Просмотрите, пожалуйста, еще раз видео-инструкцию и проверьте, что все сделано по правилам." DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,118.4" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_24" MailMessage="[curr_mail]" ReplyAll="False">
+                                <ui:ReplyToOutlookMailMessage.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                </ui:ReplyToOutlookMailMessage.Files>
+                              </ui:ReplyToOutlookMailMessage>
+                              <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Account="[mail]" Body="[&quot;Ошибка в работе робота. Cообщение c результативным файлом не доставлено на почту. Дата и время текущей ошибки - &quot;+DateTime.Now.ToString+&quot;.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_26" IsBodyHtml="False" IsDraft="False" Subject="Ошибка работы робота (Flowchart Mail Try Catch - System.TimeoutException)" To="[mail]">
+                                <ui:SendOutlookMail.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                </ui:SendOutlookMail.Files>
+                              </ui:SendOutlookMail>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </FlowStep>
+                  <FlowDecision x:Name="__ReferenceID0" Condition="[Emails.Where(Function(s) s.Subject.Contains(&quot;Остатки&quot;)).Any]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <av:Point x:Key="ShapeLocation">220.5,196.5</av:Point>
+                        <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
+                        <av:PointCollection x:Key="FalseConnector">299.5,240 329.5,240 329.5,350 410,350</av:PointCollection>
+                        <av:PointCollection x:Key="TrueConnector">220.5,240.1 120,240.1 120,354.5</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <FlowDecision.True>
+                      <FlowStep x:Name="__ReferenceID2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">6,354.5</av:Point>
+                            <av:Size x:Key="ShapeSize">228,52.8</av:Size>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="228,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_83" Level="Info" Message="[&quot;Выполнение начато&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                      </FlowStep>
+                    </FlowDecision.True>
+                    <FlowDecision.False>
+                      <FlowStep x:Name="__ReferenceID1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">410,339</av:Point>
+                            <av:Size x:Key="ShapeSize">200,22.4</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">510,339 510,108.8 260,108.8 260,138.8</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Delay>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">160,138.8</av:Point>
+                                <av:Size x:Key="ShapeSize">200,22.4</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">260,161.2 260,191.2 260.1,191.2 260.1,196.5</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetOutlookMailMessages TimeoutMS="{x:Null}" Account="[mail]" DisplayName="Get Outlook Mail Messages" Filter="[subject]='Остатки'" GetAttachements="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_11" MailFolder="Входящие" MarkAsRead="False" Messages="[Emails]" OnlyUnreadMessages="True" Top="5" />
+                            <FlowStep.Next>
+                              <x:Reference>__ReferenceID0</x:Reference>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowDecision.False>
+                  </FlowDecision>
+                  <x:Reference>__ReferenceID1</x:Reference>
+                  <x:Reference>__ReferenceID2</x:Reference>
+                  <x:Reference>__ReferenceID3</x:Reference>
+                </Flowchart>
+                <ui:GetOutlookMailMessages Filter="{x:Null}" TimeoutMS="{x:Null}" Account="[mail]" sap2010:Annotation.AnnotationText="Извлекает сообщения из почты" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="737.6,66.4" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_10" MailFolder="Входящие" MarkAsRead="True" Messages="[Emails_att]" OnlyUnreadMessages="True" Top="1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:GetOutlookMailMessages>
+                <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="" DisplayName="Цикл для поиска сообщений по ключевым словам " sap:VirtualizedContainerService.HintSize="737.6,761.6" sap2010:WorkflowViewState.IdRef="ForEach`1_30" Values="[Emails_att]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="snm:MailMessage">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="item" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="702.4,627.2" sap2010:WorkflowViewState.IdRef="Sequence_239">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If sap2010:Annotation.AnnotationText="Условие для проверки сообщений из перменной &quot;Emails_att&quot; по ключевым словам (&quot;Остатки&quot;) в теме сообщения" Condition="[item.Subject.Contains(&quot;Остатки&quot;)]" DisplayName="Условие забора вложений из почты посредством поиска сообщений по ключевым словам" sap:VirtualizedContainerService.HintSize="660.8,534.4" sap2010:WorkflowViewState.IdRef="If_42">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,340.8" sap2010:WorkflowViewState.IdRef="Sequence_237">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:SaveMailAttachments Attachments="{x:Null}" sap2010:Annotation.AnnotationText="Забор вложений из сообщений, содержащие ключевые слова в теме сообщения, в основную папку" DisplayName="Забор вложений из почты" FolderPath="[path]" sap:VirtualizedContainerService.HintSize="333.6,148" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_5" Message="[item]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:SaveMailAttachments>
+                              <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_217">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="snm:MailMessage">[curr_mail]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="snm:MailMessage">[item]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_238">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Continue sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Continue_14" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEach>
+              </Sequence>
+              <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="848.8,13024" sap2010:WorkflowViewState.IdRef="Sequence_283">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="table_config" />
+                  <Variable x:TypeArguments="x:String" Name="config" />
+                  <Variable x:TypeArguments="x:String" Name="file_name_rez" />
+                  <Variable x:TypeArguments="x:String" Name="ost_rez" />
+                  <Variable x:TypeArguments="x:String" Name="art_rez" />
+                  <Variable x:TypeArguments="x:String" Name="list_rez" />
+                  <Variable x:TypeArguments="x:String" Name="file_name_ist" />
+                  <Variable x:TypeArguments="x:String" Name="art_ist" />
+                  <Variable x:TypeArguments="x:String" Name="ost_ist" />
+                  <Variable x:TypeArguments="x:String" Name="list_ist" />
+                  <Variable x:TypeArguments="sd:DataTable" Name="table_rez" />
+                  <Variable x:TypeArguments="x:String" Name="ost_rez_col" />
+                  <Variable x:TypeArguments="x:String" Name="art_rez_col" />
+                  <Variable x:TypeArguments="x:Int32" Name="init" />
+                  <Variable x:TypeArguments="s:String[]" sap2010:Annotation.AnnotationText="Словарь букв-колонок" Default="[{&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;, &quot;R&quot;, &quot;S&quot;, &quot;T&quot;, &quot;U&quot;, &quot;V&quot;, &quot;W&quot;, &quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;}]" Name="vocab" />
+                  <Variable x:TypeArguments="x:Int32" Name="art_rez_col_index" />
+                  <Variable x:TypeArguments="x:Int32" Name="ost_rez_col_index" />
+                  <Variable x:TypeArguments="x:Int32" Name="art_ist_col_index" />
+                  <Variable x:TypeArguments="x:Int32" Name="ost_ist_col_index" />
+                  <Variable x:TypeArguments="x:String" Name="name_rez_col" />
+                  <Variable x:TypeArguments="x:String" Name="name_rez" />
+                  <Variable x:TypeArguments="x:Int32" Name="name_rez_col_index" />
+                  <Variable x:TypeArguments="x:Int32" Name="name_ist_col_index" />
+                  <Variable x:TypeArguments="si:FileInfo" Name="zipFile" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadRange AddHeaders="False" sap2010:Annotation.AnnotationText="Забираем данные из конфига" DataTable="[table_config]" DisplayName="Read Range - Config" sap:VirtualizedContainerService.HintSize="807.2,119.2" sap2010:WorkflowViewState.IdRef="ReadRange_17" Range="A3" SheetName="Лист1" WorkbookPath="[path+&quot;\&quot;+&quot;config.xlsx&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ReadRange>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="807.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_36">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="416.8,340.8" sap2010:WorkflowViewState.IdRef="Sequence_242">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="375.2,248" sap2010:WorkflowViewState.IdRef="Sequence_241">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:OutputDataTable DataTable="[table_config]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_14" Text="[config]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_84" Level="Info" Message="[config]" />
+                      </Sequence>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <Sequence sap2010:Annotation.AnnotationText="Добавление переменных номеров ячеек: названия файла, наименования, арикула, остатка и листа результата из конфига" DisplayName="Результат из конфиг" sap:VirtualizedContainerService.HintSize="807.2,2672.8" sap2010:WorkflowViewState.IdRef="Sequence_258">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Название файла с результатом" DataTable="[table_config]" DisplayName="Lookup Data Table - Название результата" sap:VirtualizedContainerService.HintSize="583.2,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_30" LookupColumnIndex="[6]" LookupValue="Есть" RowIndex="[try_rez_no]" TargetColumnIndex="[7]">
+                    <ui:LookupDataTable.CellValue>
+                      <OutArgument x:TypeArguments="x:String">[file_name_rez]</OutArgument>
+                    </ui:LookupDataTable.CellValue>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LookupDataTable>
+                  <If sap2010:Annotation.AnnotationText="Проверка на отсутствие результата" Condition="[try_rez_no=-1]" sap:VirtualizedContainerService.HintSize="583.2,888.8" sap2010:WorkflowViewState.IdRef="If_43">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="375.2,708" sap2010:WorkflowViewState.IdRef="Sequence_245">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_266">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[tryCheck]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Создать файл для результата" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_9" InstanceCachePeriod="3000" WorkbookPath="[path+&quot;\rez.xlsx&quot;]">
+                          <ui:ExcelApplicationScope.Body>
+                            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_243">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="test" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_218">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[test]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ExcelApplicationScope.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ExcelApplicationScope>
+                        <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Перезаписать конфиг под новый файл" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_10" InstanceCachePeriod="3000" WorkbookPath="[path+&quot;\config.xlsx&quot;]">
+                          <ui:ExcelApplicationScope.Body>
+                            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,820.8" sap2010:WorkflowViewState.IdRef="Sequence_244">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExcelWriteCell Cell="G3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_25" SheetName="Лист1" Text="Есть" />
+                                <ui:ExcelWriteCell Cell="H3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_26" SheetName="Лист1" Text="rez.xlsx" />
+                                <ui:ExcelWriteCell Cell="I3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_27" SheetName="Лист1" Text="B,1" />
+                                <ui:ExcelWriteCell Cell="J3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_28" SheetName="Лист1" Text="C,1" />
+                                <ui:ExcelWriteCell Cell="K3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_29" SheetName="Лист1" Text="A,1" />
+                                <ui:ExcelWriteCell Cell="L3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_30" SheetName="Лист1" Text="Лист1" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ExcelApplicationScope.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ExcelApplicationScope>
+                        <ui:ReadRange AddHeaders="False" sap2010:Annotation.AnnotationText="Забор данных из конфига" DataTable="[table_config]" DisplayName="Read Range - Config" sap:VirtualizedContainerService.HintSize="333.6,119.2" sap2010:WorkflowViewState.IdRef="ReadRange_18" Range="A3" SheetName="Лист1" WorkbookPath="[path+&quot;\&quot;+&quot;config.xlsx&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ReadRange>
+                        <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Название файла с результатом" DataTable="[table_config]" DisplayName="Lookup Data Table - Название результата" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_31" LookupColumnIndex="[6]" LookupValue="Есть" RowIndex="[try_rez_no]" TargetColumnIndex="[7]">
+                          <ui:LookupDataTable.CellValue>
+                            <OutArgument x:TypeArguments="x:String">[file_name_rez]</OutArgument>
+                          </ui:LookupDataTable.CellValue>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LookupDataTable>
+                      </Sequence>
+                    </If.Then>
+                  </If>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_85" Level="Info" Message="[file_name_rez]" />
+                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - артикул результата" DataTable="[table_config]" DisplayName="Lookup Data Table - Артикул результата" sap:VirtualizedContainerService.HintSize="583.2,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_32" LookupColumnIndex="[6]" LookupValue="Есть" TargetColumnIndex="[8]">
+                    <ui:LookupDataTable.CellValue>
+                      <OutArgument x:TypeArguments="x:String">[art_rez]</OutArgument>
+                    </ui:LookupDataTable.CellValue>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LookupDataTable>
+                  <Assign DisplayName="Assign - Колонка артикулов" sap:VirtualizedContainerService.HintSize="583.2,60" sap2010:WorkflowViewState.IdRef="Assign_219">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[art_rez_col]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[art_rez.Split(","c)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap2010:Annotation.AnnotationText="Строка для начала диапазона таблицы результата" DisplayName="Assign - Начало диапазона таблицы результата" sap:VirtualizedContainerService.HintSize="583.2,104" sap2010:WorkflowViewState.IdRef="Assign_220">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[cellStartLoopRez]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[art_rez.Split(","c)(1)]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Sequence sap2010:Annotation.AnnotationText="Замена буквы столбца на соответствующий индекс" DisplayName="Букву на номер - Артикул результат" sap:VirtualizedContainerService.HintSize="583.2,112.8" sap2010:WorkflowViewState.IdRef="Sequence_249">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="731,60" sap2010:WorkflowViewState.IdRef="Assign_221">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="731,619" sap2010:WorkflowViewState.IdRef="ForEach`1_31" Values="[vocab]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="695,454" sap2010:WorkflowViewState.IdRef="Sequence_248">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[i=art_rez_col]" sap:VirtualizedContainerService.HintSize="653,362" sap2010:WorkflowViewState.IdRef="If_44">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_246">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_222">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[art_rez_col_index]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_25" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_247">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_223">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую остаток результата" DataTable="[table_config]" DisplayName="Lookup Data Table - Остаток результата" sap:VirtualizedContainerService.HintSize="583.2,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_33" LookupColumnIndex="[6]" LookupValue="Есть" TargetColumnIndex="[9]">
+                    <ui:LookupDataTable.CellValue>
+                      <OutArgument x:TypeArguments="x:String">[ost_rez]</OutArgument>
+                    </ui:LookupDataTable.CellValue>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LookupDataTable>
+                  <Assign DisplayName="Assign - Колонка остатков" sap:VirtualizedContainerService.HintSize="583.2,60" sap2010:WorkflowViewState.IdRef="Assign_224">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[ost_rez_col]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ost_rez.Split(","c)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Sequence sap2010:Annotation.AnnotationText="Замена буквы столбца на соответствующий индекс" DisplayName="Букву на номер - Остаток результат" sap:VirtualizedContainerService.HintSize="583.2,112.8" sap2010:WorkflowViewState.IdRef="Sequence_253">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="731,60" sap2010:WorkflowViewState.IdRef="Assign_225">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="731,619" sap2010:WorkflowViewState.IdRef="ForEach`1_32" Values="[vocab]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="695,454" sap2010:WorkflowViewState.IdRef="Sequence_252">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[i=ost_rez_col]" sap:VirtualizedContainerService.HintSize="653,362" sap2010:WorkflowViewState.IdRef="If_45">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_250">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_226">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[ost_rez_col_index]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_26" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_251">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_227">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Наименование результата" DataTable="[table_config]" DisplayName="Lookup Data Table - Наименование" sap:VirtualizedContainerService.HintSize="583.2,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_34" LookupColumnIndex="[6]" LookupValue="Есть" TargetColumnIndex="[10]">
+                    <ui:LookupDataTable.CellValue>
+                      <OutArgument x:TypeArguments="x:String">[name_rez]</OutArgument>
+                    </ui:LookupDataTable.CellValue>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LookupDataTable>
+                  <Assign DisplayName="Assign - Колонка названий" sap:VirtualizedContainerService.HintSize="583.2,60" sap2010:WorkflowViewState.IdRef="Assign_228">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[name_rez_col]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[name_rez.Split(","c)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Sequence sap2010:Annotation.AnnotationText="Замена буквы столбца на соответствующий индекс" DisplayName="Букву на номер - Имя результат" sap:VirtualizedContainerService.HintSize="583.2,112.8" sap2010:WorkflowViewState.IdRef="Sequence_257">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="728.8,60" sap2010:WorkflowViewState.IdRef="Assign_229">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="728.8,623.2" sap2010:WorkflowViewState.IdRef="ForEach`1_33" Values="[vocab]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="693.6,457.6" sap2010:WorkflowViewState.IdRef="Sequence_256">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[i=name_rez_col]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_46">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_254">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_230">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[name_rez_col_index]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Break_27" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_255">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_231">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Лист результата" DataTable="[table_config]" DisplayName="Lookup Data Table - Лист результата" sap:VirtualizedContainerService.HintSize="583.2,82.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_35" LookupColumnIndex="[6]" LookupValue="Есть" TargetColumnIndex="[11]">
+                    <ui:LookupDataTable.CellValue>
+                      <OutArgument x:TypeArguments="x:String">[list_rez]</OutArgument>
+                    </ui:LookupDataTable.CellValue>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LookupDataTable>
+                </Sequence>
+                <TryCatch sap2010:Annotation.AnnotationText="Если файла результата нет - создается новый файл" DisplayName="Try Catch - Нет файла результата" sap:VirtualizedContainerService.HintSize="807.2,394.4" sap2010:WorkflowViewState.IdRef="TryCatch_36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:ReadRange AddHeaders="False" sap2010:Annotation.AnnotationText="(кстати проверку на &quot;Нет&quot; можно сделать и здесь через трайкетч, но не сейчас)" DataTable="[table_rez]" DisplayName="Read Range - Читаем результат" sap:VirtualizedContainerService.HintSize="333.6,132" sap2010:WorkflowViewState.IdRef="ReadRange_19" Range="[&quot;A&quot;+cellStartLoopRez]" SheetName="[list_rez]" WorkbookPath="[path+&quot;\&quot;+file_name_rez]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ReadRange>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_47">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:BuildDataTable DataTable="[table_rez]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Имя&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Арикул&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Остаток&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="807.2,248" sap2010:WorkflowViewState.IdRef="Sequence_259">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:OutputDataTable DataTable="[table_rez]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_15" Text="[config]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_86" Level="Info" Message="[config]" />
+                </Sequence>
+                <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[table_config]" DisplayName="For each row - Config table" sap:VirtualizedContainerService.HintSize="807.2,8263.2" sap2010:WorkflowViewState.IdRef="ForEachRow_15">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                      </ActivityAction.Argument>
+                      <Sequence sap2010:Annotation.AnnotationText="Забираем переменные источника по конфигу" DisplayName="Body" sap:VirtualizedContainerService.HintSize="757.6,8114.4" sap2010:WorkflowViewState.IdRef="Sequence_280">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="art_ist_col" />
+                          <Variable x:TypeArguments="x:String" Name="ost_ist_col" />
+                          <Variable x:TypeArguments="x:String" Name="cellStartloopIst" />
+                          <Variable x:TypeArguments="x:Int32" Name="ost_ist_value_int" />
+                          <Variable x:TypeArguments="x:Int32" Name="ost_rez_value_int" />
+                          <Variable x:TypeArguments="x:String" Name="name_ist" />
+                          <Variable x:TypeArguments="x:String" Name="name_ist_col" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Имя файла источника" ColumnIndex="0" DisplayName="Get Row Item - Положение ячейки имени файла источника" sap:VirtualizedContainerService.HintSize="714.4,108.8" sap2010:WorkflowViewState.IdRef="GetRowItem_37" Row="[row]">
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">[file_name_ist]</OutArgument>
+                          </ui:GetRowItem.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:GetRowItem>
+                        <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Артикул источника" ColumnIndex="1" DisplayName="Get Row Item - Положение ячейки артикула источника" sap:VirtualizedContainerService.HintSize="714.4,108.8" sap2010:WorkflowViewState.IdRef="GetRowItem_38" Row="[row]">
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">[art_ist]</OutArgument>
+                          </ui:GetRowItem.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:GetRowItem>
+                        <Assign sap2010:Annotation.AnnotationText="Буква столбца артикулов Источника" DisplayName="Assign - Колонка артикулов" sap:VirtualizedContainerService.HintSize="716,91.2" sap2010:WorkflowViewState.IdRef="Assign_232">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[art_ist_col]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[art_ist.Split(","c)(0)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign sap2010:Annotation.AnnotationText="Строка для начала диапазона таблицы источника" DisplayName="Assign - Начало диапазона таблицы источника" sap:VirtualizedContainerService.HintSize="716,104" sap2010:WorkflowViewState.IdRef="Assign_233">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[cellStartloopIst]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[art_ist.Split(","c)(1)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="716,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_87" Level="Error" Message="[art_ist_col]" />
+                        <Sequence DisplayName="Букву на номер - Артикул" sap:VirtualizedContainerService.HintSize="716,68.8" sap2010:WorkflowViewState.IdRef="Sequence_263">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="728.8,60" sap2010:WorkflowViewState.IdRef="Assign_234">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="728.8,623.2" sap2010:WorkflowViewState.IdRef="ForEach`1_34" Values="[vocab]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="693.6,457.6" sap2010:WorkflowViewState.IdRef="Sequence_262">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If Condition="[i=art_ist_col]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_47">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_260">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_235">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[art_ist_col_index]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Break_28" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_261">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_236">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEach>
+                        </Sequence>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="716,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_88" Level="Error" Message="[art_ist_col_index]" />
+                        <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Остаток источника" ColumnIndex="2" DisplayName="Get Row Item - Положение ячейки остатка источника" sap:VirtualizedContainerService.HintSize="716,108.8" sap2010:WorkflowViewState.IdRef="GetRowItem_39" Row="[row]">
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">[ost_ist]</OutArgument>
+                          </ui:GetRowItem.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:GetRowItem>
+                        <Assign sap2010:Annotation.AnnotationText="Буква столбца остатков Источника" DisplayName="Assign - Колонка остатков" sap:VirtualizedContainerService.HintSize="716,91.2" sap2010:WorkflowViewState.IdRef="Assign_237">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[ost_ist_col]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[ost_ist.Split(","c)(0)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Sequence DisplayName="Букву на номер - Остаток" sap:VirtualizedContainerService.HintSize="716,68.8" sap2010:WorkflowViewState.IdRef="Sequence_267">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="728.8,60" sap2010:WorkflowViewState.IdRef="Assign_238">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="728.8,623.2" sap2010:WorkflowViewState.IdRef="ForEach`1_35" Values="[vocab]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="693.6,457.6" sap2010:WorkflowViewState.IdRef="Sequence_266">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If Condition="[i=ost_ist_col]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_48">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_264">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_239">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[ost_ist_col_index]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Break_29" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_265">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_240">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Continue sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Continue_15" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEach>
+                        </Sequence>
+                        <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Номер ячейки и столбца через запятую - Наименование источника" ColumnIndex="3" DisplayName="Get Row Item - Положение ячейки наименования источника" sap:VirtualizedContainerService.HintSize="716,108.8" sap2010:WorkflowViewState.IdRef="GetRowItem_40" Row="[row]">
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">[name_ist]</OutArgument>
+                          </ui:GetRowItem.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:GetRowItem>
+                        <Assign sap2010:Annotation.AnnotationText="Буква столбца наименования Источника" DisplayName="Assign - Колонка наименования" sap:VirtualizedContainerService.HintSize="716,104" sap2010:WorkflowViewState.IdRef="Assign_241">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[name_ist_col]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[name_ist.Split(","c)(0)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Sequence DisplayName="Букву на номер - Имя" sap:VirtualizedContainerService.HintSize="714.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_271">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="731,60" sap2010:WorkflowViewState.IdRef="Assign_242">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Изменение букв на цифры (колонки)" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="731,619" sap2010:WorkflowViewState.IdRef="ForEach`1_36" Values="[vocab]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="i" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Тело" sap:VirtualizedContainerService.HintSize="695,454" sap2010:WorkflowViewState.IdRef="Sequence_270">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If Condition="[i=name_ist_col]" sap:VirtualizedContainerService.HintSize="653,362" sap2010:WorkflowViewState.IdRef="If_49">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_268">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_243">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[name_ist_col_index]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_30" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_269">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_244">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[init]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[init+1]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Continue sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Continue_16" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEach>
+                        </Sequence>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="716,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_89" Level="Info" Message="[name_ist]" />
+                        <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="4" DisplayName="Get Row Item - Лист источника" sap:VirtualizedContainerService.HintSize="716,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_41" Row="[row]">
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">[list_ist]</OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="716,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_90" Level="Info" Message="[list_ist]" />
+                        <Sequence DisplayName="Balance" sap:VirtualizedContainerService.HintSize="716,5687.2" sap2010:WorkflowViewState.IdRef="Sequence_279">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="table_ist" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="674.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_91" Level="Warn" Message="[file_name_ist]" />
+                          <ui:ReadRange AddHeaders="False" DataTable="[table_ist]" DisplayName="Read Range - Забор источника" sap:VirtualizedContainerService.HintSize="674.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_20" Range="[&quot;A&quot;+cellStartloopIst]" SheetName="[list_ist]" WorkbookPath="[path+&quot;\&quot;+file_name_ist]" />
+                          <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="По каждому источнику отмеченному в конфиге" DataTable="[table_ist]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="674.4,5333.6" sap2010:WorkflowViewState.IdRef="ForEachRow_14">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="624.8,5153.6" sap2010:WorkflowViewState.IdRef="Sequence_278">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="ui:GenericValue" Name="art_ist_value" />
+                                    <Variable x:TypeArguments="ui:GenericValue" Name="ost_ist_value" />
+                                    <Variable x:TypeArguments="ui:GenericValue" Name="ost_rez_value" />
+                                    <Variable x:TypeArguments="x:Int32" Name="ost_rez_row_index" />
+                                    <Variable x:TypeArguments="x:Int32" Name="ost_rez_value_summ" />
+                                    <Variable x:TypeArguments="ui:GenericValue" Name="name_ist_value" />
+                                    <Variable x:TypeArguments="ui:GenericValue" Name="art_rez_value" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[table_rez]" DisplayName="For Each Row - Артикулы Результата(Trim, Lower)" sap:VirtualizedContainerService.HintSize="583.2,668.8" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
+                                    <ui:ForEachRow.Body>
+                                      <ActivityAction x:TypeArguments="sd:DataRow">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row1" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="478.4,520" sap2010:WorkflowViewState.IdRef="Sequence_272">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="[art_rez_col_index]" DisplayName="Get Row Item - Читает артикулы из результата" sap:VirtualizedContainerService.HintSize="436.8,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_42" Row="[row1]">
+                                            <ui:GetRowItem.Value>
+                                              <OutArgument x:TypeArguments="ui:GenericValue">[art_rez_value]</OutArgument>
+                                            </ui:GetRowItem.Value>
+                                          </ui:GetRowItem>
+                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,322.4" sap2010:WorkflowViewState.IdRef="TryCatch_37">
+                                            <TryCatch.Try>
+                                              <Assign sap2010:Annotation.AnnotationText="Преобразование в единый формат" DisplayName="Assign - Артикулы результат преобразование" sap:VirtualizedContainerService.HintSize="262.4,91.2" sap2010:WorkflowViewState.IdRef="Assign_245">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="ui:GenericValue">[art_rez_value]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="ui:GenericValue">[art_rez_value.Trim.ToLower.ToString]</InArgument>
+                                                </Assign.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Assign>
+                                            </TryCatch.Try>
+                                            <TryCatch.Catches>
+                                              <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_48">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="s:NullReferenceException">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                </ActivityAction>
+                                              </Catch>
+                                            </TryCatch.Catches>
+                                          </TryCatch>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:ForEachRow.Body>
+                                  </ui:ForEachRow>
+                                  <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="[name_ist_col_index]" DisplayName="Get Row Item - Наименование из источника" sap:VirtualizedContainerService.HintSize="583.2,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_43" Row="[row]">
+                                    <ui:GetRowItem.Value>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[name_ist_value]</OutArgument>
+                                    </ui:GetRowItem.Value>
+                                  </ui:GetRowItem>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_92" Level="Info" Message="[name_ist_value.ToString +&quot; - имя источника&quot;]" />
+                                  <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="[art_ist_col_index]" DisplayName="Get Row Item - Артикул из источника" sap:VirtualizedContainerService.HintSize="583.2,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_44" Row="[row]">
+                                    <ui:GetRowItem.Value>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[art_ist_value]</OutArgument>
+                                    </ui:GetRowItem.Value>
+                                  </ui:GetRowItem>
+                                  <Assign sap2010:Annotation.AnnotationText="Преобразование в единый формат" DisplayName="Assign - Артикулы источник преобразование" sap:VirtualizedContainerService.HintSize="583.2,91.2" sap2010:WorkflowViewState.IdRef="Assign_246">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[art_ist_value]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="ui:GenericValue">[art_ist_value.Trim.ToLower]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_93" Level="Info" Message="[art_ist_value.ToString + &quot; - артикул источника&quot;]" />
+                                  <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="[ost_ist_col_index]" DisplayName="Get Row Item - Остаток из источника" sap:VirtualizedContainerService.HintSize="583.2,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_45" Row="[row]">
+                                    <ui:GetRowItem.Value>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[ost_ist_value]</OutArgument>
+                                    </ui:GetRowItem.Value>
+                                  </ui:GetRowItem>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_94" Level="Info" Message="[ost_ist_value.ToString +&quot; - остаток источника&quot;]" />
+                                  <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Поиск артикула в результате и выдача остатка. Добавление переменной, которая считывает индекс строки, и если артикул не найден, возвращается -1" DataTable="[table_rez]" DisplayName="Lookup Data Table - Поиск артикула в результате и выдача остатка" sap:VirtualizedContainerService.HintSize="583.2,146.4" sap2010:WorkflowViewState.IdRef="LookupDataTable_36" LookupColumnIndex="[art_rez_col_index]" LookupValue="[art_ist_value]" RowIndex="[ost_rez_row_index]" TargetColumnIndex="[ost_rez_col_index]">
+                                    <ui:LookupDataTable.CellValue>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[ost_rez_value]</OutArgument>
+                                    </ui:LookupDataTable.CellValue>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LookupDataTable>
+                                  <TryCatch DisplayName="лог" sap:VirtualizedContainerService.HintSize="583.2,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_38">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_95" Level="Error" Message="[ost_rez_value.ToString + &quot;- остаток результата до сложения&quot;]" />
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_49">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_96" Level="Error" Message="[ost_rez_value]" />
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                  <TryCatch sap2010:Annotation.AnnotationText="Проверка остатка результата на пустую сороку" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="583.2,322.4" sap2010:WorkflowViewState.IdRef="TryCatch_39">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_247">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[ost_rez_value_int]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[Cint(ost_rez_value)]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_50">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_248">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Int32">[ost_rez_value_int]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                  <TryCatch sap2010:Annotation.AnnotationText="Проверка остатка источика на пустую сороку" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="583.2,322.4" sap2010:WorkflowViewState.IdRef="TryCatch_40">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_249">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[ost_ist_value_int]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[Cint(ost_ist_value)]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_51">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="304,151.2" sap2010:WorkflowViewState.IdRef="Sequence_273">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_250">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[ost_ist_value_int]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                  <Assign sap2010:Annotation.AnnotationText="Сложение остатков источника и результата" sap:VirtualizedContainerService.HintSize="583.2,104" sap2010:WorkflowViewState.IdRef="Assign_251">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[ost_rez_value_summ]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[ost_rez_value_int+ost_ist_value_int]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <TryCatch sap2010:Annotation.AnnotationText="Ошибка феномена -1-ой строки" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="583.2,366.4" sap2010:WorkflowViewState.IdRef="TryCatch_41">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <Assign sap2010:Annotation.AnnotationText="Запись результата сложения в результат" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_252">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Object">[table_rez.Rows(ost_rez_row_index)(ost_rez_col_index)]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Object">[ost_rez_value_summ]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_52">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                  <If Condition="[string.IsNullOrEmpty(ost_ist_value)]" DisplayName="If - Пустые ячейки остатка из источника приравниваются нулю" sap:VirtualizedContainerService.HintSize="583.2,209.6" sap2010:WorkflowViewState.IdRef="If_50">
+                                    <If.Then>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_253">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="ui:GenericValue">[ost_ist_value]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="ui:GenericValue">[0]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </If.Then>
+                                  </If>
+                                  <If sap2010:Annotation.AnnotationText="Добавление новой строки при ненахождении артикула " Condition="[string.IsNullOrEmpty(ost_rez_value) or ost_rez_row_index=-1]" sap:VirtualizedContainerService.HintSize="583.2,1340" sap2010:WorkflowViewState.IdRef="If_51">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="375.2,1159.2" sap2010:WorkflowViewState.IdRef="Sequence_277">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataRow" Name="newArtRow" />
+                                          <Variable x:TypeArguments="sd:DataRow" Name="newOstRow" />
+                                          <Variable x:TypeArguments="sd:DataRow" Name="newNameRow" />
+                                          <Variable x:TypeArguments="sd:DataRow" Name="newrow" />
+                                          <Variable x:TypeArguments="x:Int32" Name="newrow_index" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="333.6,840.8" sap2010:WorkflowViewState.IdRef="Sequence_274">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap2010:Annotation.AnnotationText="Создаем переменную новой строки" DisplayName="Assign - Новая строка" sap:VirtualizedContainerService.HintSize="262.4,91.2" sap2010:WorkflowViewState.IdRef="Assign_254">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="sd:DataRow">[newrow]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="sd:DataRow">[table_rez.NewRow]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <ui:AddDataRow ArrayRow="{x:Null}" sap2010:Annotation.AnnotationText="Добавление новой строки" DataRow="[newrow]" DataTable="[table_rez]" DisplayName="Add Data Row - Добавление новой строки" sap:VirtualizedContainerService.HintSize="262.4,53.6" sap2010:WorkflowViewState.IdRef="AddDataRow_18">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:AddDataRow>
+                                          <Assign sap2010:Annotation.AnnotationText="Вычислить индекс новой строки" DisplayName="Assign - Вычислить индекс строки" sap:VirtualizedContainerService.HintSize="262.4,91.2" sap2010:WorkflowViewState.IdRef="Assign_255">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Int32">[newrow_index]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Int32">[table_rez.Rows.IndexOf(newrow)]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <Assign sap2010:Annotation.AnnotationText="Запись результататов в новую строку (имя)" DisplayName="Assign - Запись имени" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_256">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[table_rez.Rows(newrow_index)(name_rez_col_index)]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[name_ist_value]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <Assign sap2010:Annotation.AnnotationText="Запись результататов в новую строку (артикул)" DisplayName="Assign - Запись артикула" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_257">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[table_rez.Rows(newrow_index)(art_rez_col_index)]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[art_ist_value.ToString]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <Assign sap2010:Annotation.AnnotationText="Запись результататов в новую строку (остаток)" DisplayName="Assign - Запись остатка" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_258">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[table_rez.Rows(newrow_index)(ost_rez_col_index)]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[ost_ist_value.ToInt]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                        </Sequence>
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_37">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="345.6,1020.8" sap2010:WorkflowViewState.IdRef="Sequence_276">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="304,928" sap2010:WorkflowViewState.IdRef="Sequence_275">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign DisplayName="Assign - Новая строка для артикула" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_259">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="sd:DataRow">[newArtRow]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="sd:DataRow">[table_rez.NewRow]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap2010:Annotation.AnnotationText="Присвоение артикула для DataRow с пометкой в какой столбец записывать" DisplayName="Assign - Присвоение артикула для DataRow" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_260">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[newArtRow(art_rez_col_index)]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Object">[art_ist_value]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <Assign DisplayName="Assign - Новая строка для остатка" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_261">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="sd:DataRow">[newOstRow]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="sd:DataRow">[table_rez.NewRow]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap2010:Annotation.AnnotationText="Присвоение остатка для DataRow с пометкой в какой столбец записывать" DisplayName="Assign - Присвоение остатка для DataRow" sap:VirtualizedContainerService.HintSize="262.4,104" sap2010:WorkflowViewState.IdRef="Assign_262">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[newOstRow(ost_rez_col_index)]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Object">[ost_ist_value]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_263">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="sd:DataRow">[newNameRow]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="sd:DataRow">[table_rez.NewRow]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_264">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[newNameRow(name_rez_col_index)]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Object">[name_ist_value]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[newNameRow]" DataTable="[table_rez]" DisplayName="Add Data Row - Наименование" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_19" />
+                                                <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[newArtRow]" DataTable="[table_rez]" DisplayName="Add Data Row - Артикул" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_20" />
+                                                <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[newOstRow]" DataTable="[table_rez]" DisplayName="Add Data Row - Остаток" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_21" />
+                                              </Sequence>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_97" Level="Warn" Message="[&quot;Добавлена новая строка для артикула &quot; + art_ist_value.ToString]" />
+                                      </Sequence>
+                                    </If.Then>
+                                  </If>
+                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="583.2,324" sap2010:WorkflowViewState.IdRef="TryCatch_42">
+                                    <TryCatch.Try>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_98" Level="Error" Message="[ost_rez_value_summ.ToString + &quot;- остаток результата после сложения&quot;]" />
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_53">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_99" Level="Error" Message="[ost_rez_value_summ]" />
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEachRow>
+                        </Sequence>
+                        <ui:OutputDataTable DataTable="[table_rez]" DisplayName="Output Data Table -Проверка в логе" sap:VirtualizedContainerService.HintSize="716,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_16" Text="[config]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="716,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_100" Level="Warn" Message="[config]" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="807.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_38">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="484.8,308.8" sap2010:WorkflowViewState.IdRef="Sequence_281">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uascw:CompressFiles Password="{x:Null}" CodePage="Default" CompressedFileInfo="[zipFile]" CompressedFileName="[path+&quot;\Documents.zip&quot;]" CompressionLevel="Normal" DisplayName="Compress/Zip Files - Создать Zip-архив" sap:VirtualizedContainerService.HintSize="443.2,216" sap2010:WorkflowViewState.IdRef="CompressFiles_5" OverrideExistingFile="True">
+                        <uascw:CompressFiles.ContentToArchive>
+                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                            <InArgument x:TypeArguments="x:String">[path]</InArgument>
+                          </scg:List>
+                        </uascw:CompressFiles.ContentToArchive>
+                      </uascw:CompressFiles>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <If Condition="[tryCheck=True]" sap:VirtualizedContainerService.HintSize="807.2,458.4" sap2010:WorkflowViewState.IdRef="If_52">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_289">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:WriteRange AddHeaders="True" DataTable="[table_rez]" DisplayName="Write Range - Записать результата в файл" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="[list_rez]" StartingCell="[&quot;A&quot;+cellStartLoopRez]" WorkbookPath="[path+&quot;\&quot;+file_name_rez]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_267">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[tryCheck]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <ui:WriteRange AddHeaders="False" DataTable="[table_rez]" DisplayName="Write Range - Записать результата в файл" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="[list_rez]" StartingCell="[&quot;A&quot;+cellStartLoopRez]" WorkbookPath="[path+&quot;\&quot;+file_name_rez]" />
+                  </If.Else>
+                </If>
+                <ui:ReplyToOutlookMailMessage TimeoutMS="{x:Null}" Body="[&quot;Итоговый результат консолидации остатков на &quot;+DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;)]" DisplayName="Reply To Outlook Mail Message - Отправка вложений" sap:VirtualizedContainerService.HintSize="807.2,118.4" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_21" MailMessage="[curr_mail]" ReplyAll="False">
+                  <ui:ReplyToOutlookMailMessage.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                      <InArgument x:TypeArguments="x:String">[path+"\"+file_name_rez]</InArgument>
+                    </scg:List>
+                  </ui:ReplyToOutlookMailMessage.Files>
+                </ui:ReplyToOutlookMailMessage>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="807.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_39">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="375.2,239.2" sap2010:WorkflowViewState.IdRef="Sequence_282">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send Outlook Mail Message - Отправка вложений" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_22" IsBodyHtml="False" IsDraft="False" Subject="[&quot;Итоговый результат консолидации остатков на &quot;+DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;)]" To="[mail]">
+                        <ui:SendOutlookMail.Files>
+                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                            <InArgument x:TypeArguments="x:String">[path+"\"+file_name_rez]</InArgument>
+                          </scg:List>
+                        </ui:SendOutlookMail.Files>
+                      </ui:SendOutlookMail>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:Delete ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Удалить папку после отправки сообщения с консолидированными остатками" DisplayName="Delete - Удалить папку" sap:VirtualizedContainerService.HintSize="807.2,98.4" sap2010:WorkflowViewState.IdRef="Delete_6" Path="[path]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Delete>
+              </Sequence>
+            </Sequence>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_54">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="s:NullReferenceException">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Sequence - Ошибка с переменными и присвоенным к ним значениям по всей области проекта" sap:VirtualizedContainerService.HintSize="375.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_285">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReplyToOutlookMailMessage TimeoutMS="{x:Null}" Body="Произошла ошибка отправки результативного файла - result.xlsx. Возможно, среди отправленных файлов отсутствует конфигурационный файл - config.xlsx. Также проблема может заключатся в том, что значения в файле config.xlsx заданы неверно. Убедитесь, что конфигурационный файл имеет название - config.xlsx. Пересмотрите, пожалуйста, видео-инструкцию и проверьте, что все сделано правильно." DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,118.4" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_22" MailMessage="[curr_mail]" ReplyAll="False">
+                    <ui:ReplyToOutlookMailMessage.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:ReplyToOutlookMailMessage.Files>
+                  </ui:ReplyToOutlookMailMessage>
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Ошибка в работе робота. Cообщение c результативным файлом не доставлено на почту. Дата и время текущей ошибки - &quot;+DateTime.Now.ToString+&quot;.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_23" IsBodyHtml="False" IsDraft="False" Subject="Ошибка работы робота (Main Try Catch - System.NullReferenceException)" To="[mail]">
+                    <ui:SendOutlookMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendOutlookMail.Files>
+                  </ui:SendOutlookMail>
+                </Sequence>
+              </ActivityAction>
+            </Catch>
+            <Catch x:TypeArguments="s:ArgumentException" sap:VirtualizedContainerService.HintSize="400,468" sap2010:WorkflowViewState.IdRef="Catch`1_55">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="s:ArgumentException">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Sequence - Если в сообщении отсутствует config.xlsx" sap:VirtualizedContainerService.HintSize="375.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_286">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReplyToOutlookMailMessage TimeoutMS="{x:Null}" Body="Произошла ошибка отправки результативного файла - result.xlsx. Возможно, среди отправленных файлов отсутствует конфигурационный файл - config.xlsx. Также проблема может заключатся в том, что значения в файле config.xlsx заданы неверно. Убедитесь, что конфигурационный файл имеет название - config.xlsx. Пересмотрите, пожалуйста, видео-инструкцию и проверьте, что все сделано правильно." DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,118.4" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_23" MailMessage="[curr_mail]" ReplyAll="False">
+                    <ui:ReplyToOutlookMailMessage.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:ReplyToOutlookMailMessage.Files>
+                  </ui:ReplyToOutlookMailMessage>
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Ошибка в работе робота. Cообщение c результативным файлом не доставлено на почту. Дата и время текущей ошибки - &quot;+DateTime.Now.ToString+&quot;.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_24" IsBodyHtml="False" IsDraft="False" Subject="Ошибка работы робота (Main Try Catch - System.ArgumentException)" To="[mail]">
+                    <ui:SendOutlookMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendOutlookMail.Files>
+                  </ui:SendOutlookMail>
+                </Sequence>
+              </ActivityAction>
+            </Catch>
+            <Catch x:TypeArguments="ss:TimeoutException" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_56">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="ss:TimeoutException">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ss:TimeoutException" Name="exception" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Sequence - Ошибка со временем" sap:VirtualizedContainerService.HintSize="375.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_288">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReplyToOutlookMailMessage TimeoutMS="{x:Null}" Body="Произошла ошибка отправки результативного файла - result.xlsx. Возможно, среди отправленных файлов отсутствует конфигурационный файл - config.xlsx. Также проблема может заключатся в том, что значения в файле config.xlsx заданы неверно. Убедитесь, что конфигурационный файл имеет название - config.xlsx. Пересмотрите, пожалуйста, видео-инструкцию и проверьте, что все сделано правильно." DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,118.4" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_25" MailMessage="[curr_mail]" ReplyAll="False">
+                    <ui:ReplyToOutlookMailMessage.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:ReplyToOutlookMailMessage.Files>
+                  </ui:ReplyToOutlookMailMessage>
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Ошибка в работе робота. Cообщение c результативным файлом не доставлено на почту. Дата и время текущей ошибки - &quot;+DateTime.Now.ToString+&quot;.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_25" IsBodyHtml="False" IsDraft="False" Subject="Ошибка работы робота (Main Try Catch - System.TimeoutException)" To="[mail]">
+                    <ui:SendOutlookMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendOutlookMail.Files>
+                  </ui:SendOutlookMail>
+                </Sequence>
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+        </TryCatch>
+        <FlowStep.Next>
+          <x:Reference>__ReferenceID4</x:Reference>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart>
+  </Sequence>
+</Activity>
